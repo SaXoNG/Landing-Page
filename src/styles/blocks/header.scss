@@ -1,0 +1,39 @@
+.header {
+  background-image: url(../images/header-mb-bg.png);
+  background-size: cover;
+  background-position: right;
+
+  @include on-tablet {
+    background-image: url(../images/header-bg.png);
+    background-size: cover;
+    background-position: center;
+  }
+
+  @include header-padding;
+
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &__bottom {
+    margin: 0;
+    font-weight: 700;
+    letter-spacing: -1.5px;
+    text-align: center;
+    font-size: $title-size-phone;
+    line-height: $title-size-phone;
+
+    @include on-tablet {
+      font-size: $title-size-tablet;
+      line-height: $title-size-tablet;
+    }
+
+    @include on-full-screen {
+      font-size: $title-size-full;
+      line-height: $title-size-full;
+    }
+
+    @include header-animation;
+  }
+}

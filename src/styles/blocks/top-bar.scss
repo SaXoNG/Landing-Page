@@ -1,0 +1,38 @@
+.top-bar {
+  padding-bottom: 48px;
+  position: relative;
+
+  @media (min-width: 744px) {
+    padding-bottom: 44px;
+  }
+
+  @media (min-width: 1260px) {
+    padding-bottom: 60px;
+  }
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logo {
+    height: 38px;
+    width: 130px;
+
+    @include on-tablet {
+      height: 56px;
+      width: 187px;
+    }
+
+    @include header-animation;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__icons {
+    display: flex;
+    align-items: center;
+    gap: $icon-size-phone;
+  }
+}
