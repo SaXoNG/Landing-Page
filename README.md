@@ -39,6 +39,6 @@ Open the project folder in VS Code.
 Right-click index.html and choose "Open with Live Server".
 Option 2: Using Python HTTP Server
 If you have Python installed:
-# Python 3.x
+Python 3.x
 python -m http.server
 Then open your browser and go to http://localhost:8000
